@@ -1,0 +1,91 @@
+$color1: lighblue;
+$opposite: lightgreen;
+
+			@media (min-width: 700px) {
+				body{
+					background-color: $color1;
+				}
+				.grid-item{
+					background-color: $color1;
+				}
+				th{background-color:$opposite;
+				}
+				.row > div {
+				background-color:$opposite;
+				border: 2px solid black;
+			}
+			}
+			@media (max-width: 699px) {
+				body{
+					background-color:$opposite ;
+				}
+				.grid-item{
+					background-color: $opposite;
+				}
+				th{background-color:$color1;
+			
+			}
+			    .row > div  {
+				background-color:$color1;
+				border: 2px solid black;
+				}
+			}
+			.container{
+				
+				div{
+				color: black;
+				font-weight: bold;
+				text-align: center;
+				
+				a{
+				color: black;
+				font-weight: bold;
+				text-align: center;
+				
+				}
+				}
+			}
+
+			$divi: blue;
+
+			div{
+				font-size: 18px;
+				p{
+					color:$divi;
+				}
+				ul{
+					color:$divi;
+				}
+				li{
+					color:$divi;
+				}
+				a{
+					color:darkblue
+				}
+
+			}
+
+				%message{
+					font-family: sans-serif;
+					font-weight: bold;
+					text-align: center;
+
+				}
+
+				.madrid{
+					@extend %message;
+					background-color: white
+				}
+
+				.barcelona{
+					@extend %message;
+					background-color: blue;
+					color: white;
+				}
+
+				.liverpool{
+					@extend %message;
+					background-color: red
+				}
+
+

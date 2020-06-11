@@ -1,0 +1,20 @@
+h1,h2,h4,h5,th{
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.grid-item>p{
+	color: black;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+li::before{
+	content: "\261B";
+	font-weight: bold;
+}
+
+
